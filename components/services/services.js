@@ -9,7 +9,6 @@ function Services() {
   return (
     <div className="container ben">
       <div className="services">
-        <Link href={"/services/design"}>
           <div className="services__block">
             <div className="services__block__inner">
               <div className="services__block__inner__letters">
@@ -33,9 +32,8 @@ function Services() {
               </div>
             </div>
           </div>
-        </Link>
 
-        <Link href={"/services/seo"}>
+    
           <div className="services__block">
             <div className="services__block__inner">
               <div className="services__block__inner__letters">
@@ -58,11 +56,11 @@ function Services() {
               </div>
             </div>
           </div>
-        </Link>
+   
       </div>
 
       <div className="services bottom">
-        <Link href={"/services/development"}>
+        
           <div className="services__block">
             <div className="services__block__inner">
               <div className="services__block__inner__letters">
@@ -85,9 +83,7 @@ function Services() {
               </div>
             </div>
           </div>
-        </Link>
-
-        <Link href={"/services/design"}>
+       
           <div className="services__block">
             <div className="services__block__inner">
               <div className="services__block__inner__letters">
@@ -110,7 +106,6 @@ function Services() {
               </div>
             </div>
           </div>
-        </Link>
       </div>
     </div>
   );
