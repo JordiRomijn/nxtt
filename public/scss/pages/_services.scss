@@ -1,0 +1,130 @@
+.ben {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 10rem;
+  
+  @include laptop {
+    display: block;
+  }
+}
+
+.bottom {
+  margin-top: 25rem;
+
+  @include laptop {
+    height: 100%;
+    margin-top: 0px;
+  }
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__block {
+    background-color: #f2f2f2;
+    height: 700px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 100px;
+
+    @include laptop {
+      height: 100%;
+      margin-top: 50px;
+    }
+
+    &__inner {
+      &__letters {
+        display: none;
+
+        @include phone {
+          display: block;
+        }
+      }
+
+      &__letters-sm {
+        display: block;
+        text-align: center;
+
+        span {
+          font-size: 200px;
+          text-align: center;
+        }
+
+        @include phone {
+          display: none;
+        }
+      }
+    }
+
+    &:hover &__inner {
+      background-color: black;
+      transition: 1s;
+
+      @include laptop {
+        transition: 0s;
+        background-color: #f2f2f2;
+      }
+
+      &__heading,
+      &__text {
+        h2 {
+          color: #CD9A38;
+          transition: 1s;
+        }
+        p {
+          color: white;
+          transition: 1s;
+
+          @include laptop {
+            color: black;
+            transition: 0s;
+          }
+        }
+      }
+    }
+    &__inner {
+      height: 700px;
+      border-radius: 5px;
+
+      @include laptop {
+        height: 100%;
+      }
+
+      &:hover &__letters img {
+        right: 25%;
+
+        @include tablet-landscape {
+          right: 0%;
+        }
+
+        &__heading {
+          color: white;
+        }
+      }
+
+      &__letters {
+        margin-left: auto;
+        width: 100%;
+        position: relative;
+        min-height: 450px;
+        overflow: hidden;
+
+        img {
+          position: absolute;
+          right: -20px;
+          top: 10%;
+          transition: right 1.5s ease;
+        }
+      }
+
+      &__heading {
+      }
+
+      &__text {
+        margin-bottom: 4rem;
+      }
+    }
+  }
+}

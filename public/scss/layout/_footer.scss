@@ -1,0 +1,201 @@
+.footer {
+  width: 100%;
+  background-color: #222222;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+
+  &__inner {
+    &__top {
+      display: flex;
+      height: 60%;
+      flex-direction: column;
+
+      @include phone {
+        flex-direction: unset;
+        padding-top: 2rem;
+        padding-left: 5rem;
+      }
+
+      &__pages {
+        padding: 0rem;
+        width: 70%;
+        display: flex;
+
+        @include tablet-landscape {
+          width: 100%;
+          padding-top: 2rem;
+        }
+
+        ul {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding-bottom: 2rem;
+
+          @include phone {
+            width: 50%;
+            text-align: left;
+            padding-left: 2rem;
+          }
+
+          a {
+            display: flex;
+            color: white;
+            text-decoration: none;
+            list-style: none;
+            font-size: 24px;
+            width: 100%;
+            justify-content: center;
+
+            @include phone {
+              width: 100%;
+              justify-content: flex-start;
+            }
+          }
+        }
+      }
+
+      &__contact {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+
+        @include phone {
+          padding-right: 5rem;
+          padding-bottom: 0rem;
+          justify-content: flex-end;
+          width: 70%;
+        }
+
+        ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding-bottom: 1rem;
+
+          @include phone {
+            padding-bottom: 2rem;
+          }
+
+          li {
+            color: white;
+            text-decoration: none;
+            list-style: none;
+            font-size: 24px;
+
+            @include phone {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      display: flex;
+      border-top: 2px solid #cd9a38;
+      display: flex;
+      flex-direction: column;
+
+      @include phone {
+        flex-direction: unset;
+        padding: 2rem 5rem 2rem 3rem;
+      }
+
+      &__location {
+        padding-top: 2rem;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        display: flex;
+
+        @include phone {
+          width: 100%;
+          padding-top: 0rem;
+          text-align: left;
+        }
+
+        span {
+          padding-top: 1rem;
+          color: white;
+          text-decoration: none;
+          list-style: none;
+          font-size: 24px;
+
+          @include tablet-landscape{
+            font-size: 18px;
+          }
+
+          @include phone {
+          }
+        }
+      }
+
+      &__links {
+        width: 100%;
+        display: flex;
+        padding-top: 2rem;
+        flex-direction: column;
+        justify-content: center;
+
+        @include phone {
+          flex-direction: column;
+          justify-content: flex-end;
+          padding-top: 0rem;
+          width:100%;
+          padding-right: 3rem;
+        }
+
+        li {
+          color: white;
+          list-style: none;
+          text-align: center;
+          font-size: 24px;
+
+          @include phone {
+            text-align: end;
+            font-size: 24px;
+          }
+
+          @include tablet-landscape{
+            text-align: center;
+            font-size: 18px;
+          }
+
+
+        }
+      }
+
+      &__logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0rem;
+
+        @include tablet-landscape {
+          width: 100%;
+          padding-top: 4rem;
+          padding-bottom: 2rem;
+          align-items: center
+        }
+
+        @include phone {
+          width: 20%;
+          padding-top: 1rem;
+          padding-bottom: 0rem;
+          align-items: center;
+        }
+
+        img {
+          width: 200px;
+          height: 55px;
+        }
+      }
+    }
+  }
+}

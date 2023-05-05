@@ -1,0 +1,325 @@
+.diensten {
+  background-color: black;
+  width: 100%;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+
+  &__inner {
+    padding: 8rem;
+    transform: scale(0.98);
+    transition: 1s ease;
+
+    &:hover {
+      transform: scale(1);
+    }
+
+    @include tablet-landscape {
+      padding: 0rem;
+    }
+
+    &__text {
+      width: 100%;
+      padding: 2rem; 
+
+      p {
+        font-size: 24px;
+        width: 50%;
+        color: white;
+
+        @include laptop-lg {
+          width: 60%;
+        }
+
+        @include tablet-landscape {
+          width: 100%;
+          padding-top: 2rem;
+          text-align: center;
+        }
+
+        @include tablet-portrait {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &__services {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 2rem;
+      padding-top: 5rem;
+
+      &__1 {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        @include laptop-lg {
+          flex-direction: column;
+        }
+
+        span {
+          width: 80%;
+          text-align: center;
+          font-size: 80px;
+          color: white;
+
+          @include laptop-lg {
+            width: 100%;
+            text-align: end;
+          }
+
+          @include tablet-landscape {
+            width: 100%;
+            text-align: center;
+            font-size: 80px;
+          }
+
+          @include tablet-portrait {
+            font-size: 32px;
+          }
+        }
+
+        .rotated {
+          width: 60px;
+          display: flex;
+          text-align: center;
+          transform: rotate(270deg);
+
+          @include laptop-lg {
+            width: 100%;
+            flex-direction: column;
+            transform: rotate(0deg);
+            text-align: end;
+          }
+
+          @include tablet-landscape {
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+            transform: rotate(0deg);
+            font-size: 80px;
+          }
+
+          @include tablet-portrait {
+            font-size: 32px;
+          }
+        }
+      }
+
+      &__2 {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        @include laptop-lg {
+          flex-direction: column;
+        }
+
+        span {
+          width: 60%;
+          text-align: end;
+          font-size: 90px;
+          color: white;
+
+          @include tablet-landscape {
+            justify-content: center;
+            width: 100%;
+            font-size: 80px;
+            text-align: center;
+          }
+
+          @include tablet-portrait {
+            font-size: 32px;
+          }
+
+          @include laptop-lg {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    &__button {
+      width: 100%;
+      height: 20vh;
+      padding-top: 3rem;
+      display: flex;
+      justify-content: center;
+
+      @include phone {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      @include tablet-landscape {
+        justify-content: center;
+      }
+
+      .button-primary {
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+.abouthome {
+  width: 100%;
+  transform: scale(0.98);
+  transition: 1s ease;
+  display: flex;
+  flex-direction: column;
+  transform: none;
+  text-align: center;
+  padding: 7rem 0rem 7rem 0rem;
+
+  &:hover {
+    transform: scale(1);
+  }
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    transition: 1s ease;
+    transform: scale(0.98);
+
+    @include laptop {
+      flex-direction: column;
+    }
+
+    @include phone {
+      &:hover {
+        transform: scale(1);
+      }
+    }
+
+    &__image {
+      width: 100%;
+
+      @include phone {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+
+        @include phone {
+          width: 90%;
+        }
+      }
+    }
+
+    &__text {
+      width: 100%;
+
+      @include phone {
+        width: 100%;
+      }
+
+      h2 {
+        font-weight: 400;
+        width: 100%;
+        text-align: left;
+
+        @include laptop {
+          text-align: center;
+          width: 100%;
+          padding-top: 4rem;
+        }
+      }
+
+      p {
+        text-align: left;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        width: 80%;
+
+        @include laptop {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      &-button {
+        display: flex;
+        place-content: left;
+
+        @include laptop {
+          display: flex;
+          place-content: center;
+        }
+
+        .button-full {
+          @include tablet-portrait {
+          }
+        }
+      }
+    }
+  }
+}
+
+.afspraak {
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 100%;
+  box-shadow: 0px 0px 20px 0px #e3e3e3;
+
+  &__inner {
+    width: 100%;
+    padding: 6rem 0rem 6rem 0rem;
+    transition: 1s ease;
+    transform: scale(0.98);
+
+    span {
+      color: #cd9a38;
+    }
+
+    @include phone {
+      padding: 6rem 4rem 6rem 4rem;
+
+      &:hover {
+        transform: scale(1);
+      }
+    }
+
+    h2 {
+      font-weight: 400;
+      width: 100%;
+
+      @include phone {
+        width: 60%;
+      }
+
+      @include laptop {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    p {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      width: 100%;
+
+      @include phone {
+        width: 50%;
+      }
+
+      @include laptop {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    &-button {
+      display: flex;
+      place-content: left;
+
+      @include laptop {
+        display: flex;
+        place-content: center;
+      }
+    }
+  }
+}

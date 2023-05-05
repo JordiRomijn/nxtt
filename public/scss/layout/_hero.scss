@@ -1,0 +1,225 @@
+.hero {
+  position: relative;
+  padding: 1rem;
+  height: 100vh;
+  background-image: url("../../assets/hero-background.png");
+  object-fit: cover;
+  object-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 100%;
+
+  @include laptop {
+    padding: 2rem;
+  }
+
+  @include phone {
+    padding: 4rem;
+    background-size: cover;
+  }
+
+  &__navbar {
+    width: 100%;
+    display: flex;
+    height: min-content;
+    display: flex;
+    align-items: center;
+
+    .logo {
+      img {
+        width: 204px;
+        height: 50px;
+
+        @include phone {
+          width: 255px;
+          height: 60px;
+        }
+      }
+    }
+
+    .button-primary {
+      margin-left: auto;
+      left: 80%;
+
+      @include laptop {
+        display: none;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    span {
+      color: #cd9a38;
+    }
+
+    h1 {
+      color: white;
+      margin-top: 12rem;
+      font-weight: 600;
+      line-height: 120px;
+      width: 70%;
+      text-align: center;
+      font-size: 90px;
+      line-height: auto;
+
+      @include tablet-landscape{
+        font-size: 40px;
+      }
+
+
+      @include laptop {
+        margin-top: 8rem;
+        line-height: 80px;
+        width: 100%;
+        text-align: center;
+        font-size: 50px;
+      }
+
+      @include desktop {
+        margin-top: 10rem;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    h4 {
+      color: white;
+      font-weight: 400;
+      margin-top: 5rem;
+      text-align: center;
+    }
+  }
+
+  .hamburger {
+    margin-left: auto;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
+    &.active {
+      & > :first-child {
+        transform: translateY(10px) translateX(10px) rotate(45deg);
+        transition: 1.4s;
+        opacity: 0;
+        width: 30px;
+      }
+
+      & > :nth-child(2) {
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: 1.4s;
+      }
+
+      & > :last-child {
+        transform: translateY(-10px) translateX(10px) rotate(-45deg);
+        transition: 1.4s;
+        opacity: 0;
+        width: 30px;
+      }
+    }
+  }
+
+  img {
+    margin-bottom: 10px;
+    align-self: end;
+  }
+}
+
+.hero-menu-container {
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  transition: right 1s ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.hero-menu {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  transition: right 1s ease-in-out;
+  padding: 4rem;
+
+  @include laptop {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  &__close {
+    display: flex;
+    justify-content: right;
+
+    &__button {
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &.active {
+    right: 0;
+
+    & ~ body {
+      opacity: 0.5;
+      background-color: red;
+    }
+
+    & ~ header {
+      opacity: 1;
+    }
+  }
+
+  .hero-bottom {
+    position: absolute;
+    bottom: 10%;
+    display: block;
+
+    h5 {
+      color: black;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      a {
+        color: black;
+        font-size: 4.688rem;
+        font-weight: 600;
+        transition: 0.4s;
+
+        @include tablet-landscape {
+          font-size: 45px;
+        }
+      }
+
+      a:hover {
+        font-size: 5rem;
+        color: #535353;
+      }
+    }
+  }
+}

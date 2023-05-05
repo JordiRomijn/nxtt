@@ -1,0 +1,144 @@
+.detail {
+  margin-bottom: 10rem;
+  text-align: center;
+
+  @include phone {
+    text-align: left;
+  }
+
+  h1 {
+    margin: 0rem 0rem 0rem 0rem;
+    width: 100%;
+
+    @include phone {
+      margin: 6rem 6rem 6rem 0rem;
+      width: 80%;
+    }
+  }
+
+  h3 {
+    width: 100%;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @include phone {
+      width: 80%;
+      text-align: left;
+    }
+  }
+}
+
+.aanpak {
+  background-color: black;
+
+  &__inner {
+    padding: 4rem 0rem 4rem 0rem;
+    display: flex;
+    width: 100%;
+    gap: 100px;
+
+    @include laptop {
+      gap: 30px;
+      padding: 1rem 0rem 1rem 0rem;
+    }
+
+    @include tablet-landscape {
+      display: block;
+      text-align: -webkit-center;
+    }
+
+    &-text {
+      flex-shrink: 1;
+      width: 50%;
+      text-align: right;
+
+      @include tablet-landscape {
+        display: block;
+        text-align: -webkit-center;
+        width: 90%;
+      }
+
+      h2 {
+        color: white;
+        font-weight: 600;
+      }
+
+      p {
+        color: white;
+        width: 70%;
+        float: right;
+
+        @include laptop {
+          width: 100%;
+        }
+      }
+    }
+
+    &-image {
+      flex-shrink: 1;
+      width: 50%;
+      text-align: left;
+
+      @include tablet-landscape {
+        width: 100%;
+        text-align: center;
+        margin-top: 9rem;
+      }
+
+      img {
+        @include laptop {
+          width: 435px;
+          height: 414px;
+        }
+
+        @include tablet-landscape {
+          width: 365px;
+          height: 347px;
+        }
+
+        @include tablet-portrait {
+          width: 301px;
+          height: 286px;
+        }
+      }
+    }
+  }
+}
+
+.proces {
+  h2 {
+    text-align: center;
+    margin: 4rem 0rem 4rem 0rem;
+  }
+
+  &__inner {
+    padding: 0rem 15rem 5rem 15rem;
+
+    @include laptop {
+      padding: 0rem 7rem 5rem 7rem;
+    }
+
+    @include tablet-landscape {
+      padding: 0rem 2rem 5rem 2rem;
+    }
+
+    &-main {
+      border-left: 5px #cd9a38 solid;
+
+      .main__text {
+        margin-left: 10px;
+
+        span {
+          font-size: 32px;
+          font-weight: 600;
+        }
+
+        p {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+}

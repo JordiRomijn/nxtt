@@ -1,0 +1,146 @@
+.button-primary {
+  display: flex;
+  border: 1px solid #333333;
+  border-radius: 50px;
+  width: 60px;
+  align-items: center;
+  height: 60px;
+  transition: width 1s ease;
+  background-color: #333333;
+  position: absolute;
+  max-width: max-content;
+  padding-right: 20px;
+
+  @include tablet-landscape {
+    width: 150px;
+    text-align: center;
+    transition: none;
+    padding-right: 0px;
+  }
+
+  a {
+    transition: 1s;
+    margin-left: 20px;
+    width: 100%;
+    color: white;
+    font-size: 24px;
+
+    @include tablet-landscape {
+      margin: 0;
+      width: 150px;
+      transition: none;
+      text-align: center;
+    }
+  }
+
+  &:hover {
+    width: 10%;
+  }
+}
+
+.button-secondary {
+  display: flex;
+  background-color: #333333;
+  border-radius: 50px;
+  width: 60px;
+  align-items: center;
+  height: 60px;
+  transition: width 1s ease;
+
+  @include tablet-landscape {
+    width: 150px;
+    text-align: center;
+    transition: none;
+  }
+
+  a {
+    transition: 1s;
+    margin-left: 20px;
+    width: 100%;
+    color: white;
+    font-size: 24px;
+
+    @include tablet-landscape {
+      margin: 0;
+      width: 150px;
+      transition: none;
+    }
+  }
+
+  &:hover {
+    width: 10%;
+
+    @include laptop-lg {
+      width: 12%;
+      border-radius: 50px;
+    }
+
+    @include laptop {
+      width: 17%;
+      border-radius: 50px;
+    }
+
+    @include tablet-landscape {
+      width: 150px;
+      margin: 0;
+      transition: none;
+    }
+
+    a {
+      margin-left: 40px;
+      transition: 1s ease;
+
+      @include tablet-landscape {
+        width: 150px;
+        margin-left: 0;
+        transition: none;
+      }
+    }
+  }
+}
+
+.button-full {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+  border-radius: 20px;
+  font-size: 24px;
+  padding: 1rem;
+
+  a {
+    img {
+      justify-content: center;
+      height: 15px;
+    }
+  }
+
+  @include phone {
+    padding: 1rem;
+    max-width: 400px;
+  }
+}
+
+.button-empty {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  font-size: 24px;
+  padding: 1rem;
+
+  a {
+    color: #333333;
+    border-bottom: 1px solid #333333;
+
+    img {
+      justify-content: center;
+      height: 15px;
+    }
+  }
+
+  @include phone {
+    width: 50%;
+  }
+}
