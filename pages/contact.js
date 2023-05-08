@@ -19,7 +19,7 @@ function contact() {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_6atuhnr",
+      "service_oqo9lvd",
       "template_ubuao9n",
       form.current,
       API_KEY
