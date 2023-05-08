@@ -9,7 +9,7 @@ function diensten() {
             <p>
               Wij bouwen websites die gericht zijn op de toekomst. Die modern
               zijn, aansluiten bij de doelgroep en helpen bij de automatisering
-              binnen uw organistatie.
+              binnen jouw organistatie.
             </p>
           </div>
           <div className="diensten__inner__services">
@@ -18,7 +18,7 @@ function diensten() {
               <span className="rotated">SEO</span>
             </div>
             <div className="diensten__inner__services__2">
-              <span>UI Design</span>
+              <span>Design</span>
               <span>Onderhoud</span>
             </div>
           </div>

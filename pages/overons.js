@@ -10,7 +10,7 @@ function index() {
           <div className="container about__hero">
             <h2>Over ons</h2>
             <p>
-              Wij zijn NXTT, wij zijn een team van 3 experts in
+              Wij zijn NXTT, een team van 3 experts in
               webontwikkeling. Onze focus ligt op het bouwen van aantrekkelijke
               en gebruiksvriendelijke websites die passen bij de visie en doelen
               van onze klanten. Of je nu een start-up bent of een gevestigd

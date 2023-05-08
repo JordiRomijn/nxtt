@@ -21,18 +21,17 @@ function index() {
           <div className="container">
             <div className="afspraak__inner">
               <h2>
-                Kunnen wij iets voor <span>u betekenen?</span>
+                Kunnen wij iets voor <span>jou betekenen?</span>
               </h2>
               <p>
-                Wilt u uw online positie versterken, handmatige systemen
-                automatiseren of een website die mee gaat met de tijd? Plan met
-                ons een telefonische gesprek in om te kijken wat wij voor u
-                kunnen betekenen.{" "}
+                Wil jij jouw online positie versterken, handmatige systemen
+                automatiseren of een website die mee gaat met de tijd? 
               </p>
               <div className="afspraak__inner-button">
                 <div className="button-full">
-                  <Link href="/overons">
-                    Plan een gesprek in <Image src={Pijl} />
+                  <Link href="/contact">
+                    Stuur ons een bericht
+                    <Image src={Pijl} />
                   </Link>
                 </div>
               </div>

@@ -16,9 +16,9 @@ function about() {
             <p>
               NXTT is een enthousiast, gepassioneerd en doelgestreven team. Wij
               ambiëren om als team een goede prestatie te leveren naar de klant.
-              We functioneren in een team van drie man, waar iedereen elkaar
+              Wij functioneren in een team van drie man, waar iedereen elkaar
               mooi aanvult. Door de variatie van onderlinge kwaliteiten binnen
-              het team kunnen we onze kwaliteit waarborgen.
+              het team kunnen wij onze kwaliteit waarborgen.
             </p>
             <div className="abouthome__inner__text-button">
               <div className="button-full">

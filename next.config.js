@@ -1,6 +1,7 @@
 module.exports = {
   env: {
     API_BASE: process.env.API_BASE,
-    APP_NAME: 'NXTT'
+    API_KEY: process.env.API_KEY,
+    APP_NAME: "NXTT",
   },
 };

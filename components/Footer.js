@@ -32,12 +32,13 @@ function index() {
           </div>
           <div className="footer__inner__bottom__links">
             <ul>
-              <li>Privacybeleid</li>
-              <li>Algemene voorwaarden</li>
+              <Link href="https://nxtt.nl/assets/algemenevoorwaarden.pdf">
+                <li>Algemene voorwaarden</li>
+              </Link>
             </ul>
           </div>
           <div className="footer__inner__bottom__logo">
-            <Image src={Logo} alt="Logo NXTT"/>
+            <Image src={Logo} alt="Logo NXTT" />
           </div>
         </div>
       </div>

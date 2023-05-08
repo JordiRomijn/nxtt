@@ -1,4 +1,3 @@
-import UI from "../../public/assets/services/UI.svg";
 import DE from "../../public/assets/services/DE.svg";
 import SE from "../../public/assets/services/SE.svg";
 import ON from "../../public/assets/services/ON.svg";
@@ -12,14 +11,14 @@ function Services() {
           <div className="services__block">
             <div className="services__block__inner">
               <div className="services__block__inner__letters">
-                <Image src={UI} alt="UI design" />
+                <Image src={DE} alt="design" />
               </div>
               <div className="services__block__inner__letters-sm">
-                <span>UI</span>
+                <span></span>
               </div>
               <div className="container">
                 <div className="services__block__inner__heading">
-                  <h2>UI Design</h2>
+                  <h2>Design</h2>
                 </div>
 
                 <div className="services__block__inner__text">

@@ -53,8 +53,9 @@ const Header = () => {
             </li>
           </ul>
           <div className="header-bottom">
-            <h5>Privacy beleid</h5>
-            <h5>Algemene voorwaarden</h5>
+            <Link href="https://nxtt.nl/assets/algemenevoorwaarden.pdf">
+              <h5>Algemene voorwaarden</h5>
+            </Link>
           </div>
         </div>
 
