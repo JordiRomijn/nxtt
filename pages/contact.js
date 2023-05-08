@@ -52,17 +52,32 @@ function contact() {
               </div>
               <form ref={form} onSubmit={sendEmail} className="contactform">
                 <div className="contact__inner__form">
-                  <div className="contact__inner__form__input">
-                    <input type="text" placeholder="Email" />
+                 <div className="contact__inner__form__input">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Email"
+                      required
+                    />
                   </div>
                   <div className="contact__inner__form__input">
-                    <input type="text" placeholder="Telefoonnummer" />
+                    <input
+                      type="text"
+                      name="phone"
+                      placeholder="Telefoonnummer"
+                      required
+                    />
                   </div>
                   <div className="contact__inner__form__input">
-                    <textarea type="text" placeholder="Bericht" />
+                    <textarea
+                      type="text"
+                      name="message"
+                      placeholder="Bericht"
+                      required
+                    />
                   </div>
                   <div className="contact__inner__form__input">
-                    <button className="button-full">Versturen</button>
+                    <button type="submit" className="button-full">Versturen</button>
                   </div>
                 </div>
                 <div className=""> {result ? <Result /> : null} </div>
