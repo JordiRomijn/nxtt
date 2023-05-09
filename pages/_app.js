@@ -15,9 +15,9 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image" content="-"></meta>
         <meta property="og:site_name" content="NXTT" />
         <meta property="og:locale" content="nl" />
-        <meta name="theme-color"></meta>
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black" />
 
-        <meta name="keywords" content="-" />
+        <meta name="keywords" content="webdevelopment, design, websites, website op maat" />
         <meta name="apple-mobile-web-app-title" content="NXTT"></meta>
         <meta
           name="description"
