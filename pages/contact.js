@@ -11,9 +11,12 @@ const Result = () => {
   return <p>Bericht is verstuurd! Ik neem zo snel mogelijk contact op.</p>;
 };
 
-function contact() {
+function contact(req, res) {
   const [result, showResult] = useState(false);
   const form = useRef();
+  const senderIP = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
+  console.log('Sender IP:', senderIP);
+  
 
   const sendEmail = (e) => {
     e.preventDefault();
