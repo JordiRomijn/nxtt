@@ -14,7 +14,7 @@ const Result = () => {
 function contact(req, res) {
   const [result, showResult] = useState(false);
   const form = useRef();
-  const senderIP = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
+  const senderIP = req.socket.remoteAddress;
   console.log('Sender IP:', senderIP);
   
 
