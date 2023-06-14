@@ -14,8 +14,7 @@ const Result = () => {
 function contact(req, res) {
   const [result, showResult] = useState(false);
   const form = useRef();
- const senderIP = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-  console.log('Sender IP:', senderIP);
+
   
 
   const sendEmail = (e) => {
