@@ -10,7 +10,7 @@ function index() {
           <div className="footer__inner__top__pages">
             <ul>
               <Link href="/">Home</Link>
-              <Link href="/diensten">Diensten</Link>
+              <Link href="/services">Diensten</Link>
               <Link href="/overons">Over ons</Link>
             </ul>
             <ul>
